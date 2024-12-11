@@ -22,6 +22,7 @@ export default function PaymentSection() {
           },
         }
       );
+      console.log(response.data.user);
       setUserData(response.data.user);
     }
     dataFetch();
@@ -44,6 +45,7 @@ export default function PaymentSection() {
             key={user.id}
             firstName={user.firstName}
             lastName={user.lastName}
+            balance = {user.balance}
             letter={user.firstName[0]}
             id={user.id}
           />

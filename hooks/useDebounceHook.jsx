@@ -5,7 +5,7 @@ export default function useDebounce(input) {
   useEffect(() => {
     const clock = setTimeout(() => {
       setDebouncedValue(input);
-    }, "1000");
+    }, "500");
     return () => {
       clearTimeout(clock);
     };

@@ -11,7 +11,7 @@ export default function TopBar({ HeadingText, SecondaryText }) {
   const [profileIcon, setProfileIcon] = useState("");
   useEffect(() => {
     async function userProfileFetcher() {
-      const response = await axios.get("https://transactionbackend.up.railway.app/api/v1/user/me", {
+      const response = await axios.get("http://localhost:3000/api/v1/user/me", {
         headers: {
           authorization: localStorage.getItem("authorization"),
         },
