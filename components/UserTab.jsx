@@ -5,7 +5,7 @@ import ProfileIcon from "./ProfileIcon";
 export default function UserTab({ letter, firstName, lastName,id,balance}) {
 
   return (
-    <div className="border-2 rounded-md px-4 flex justify-between mt-4 items-center">
+    <div className="border-2 rounded-md px-4 py-2 flex justify-between mt-4 items-center">
       <div className="grid grid-rows-2 gap-2">
       <div className=" flex  gap-2">
         <ProfileIcon letter={letter} />
