@@ -7,7 +7,7 @@ export default function useVerify() {
   useEffect(() => {
     async function verification() {
       const response = await axios.get(
-        "http://localhost:3000/api/v1/user/verify",
+        "https://transactionbackend.up.railway.app/api/v1/user/verify",
         {
           headers: {
             authorization: localStorage.getItem("authorization"),
