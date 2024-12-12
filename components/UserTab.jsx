@@ -11,8 +11,7 @@ export default function UserTab({ letter, firstName, lastName,id,balance}) {
         <ProfileIcon letter={letter} />
         <p className="self-center">{firstName} {lastName}</p>
       </div>
-        <p className="bg-green-100 px-1 rounded-full border-2 border-green-700 text-green-700 font-semibold text-sm flex
-          items-center justify-center max-w-30">${balance}</p></div>
+        <p className="bg-green-100 px-1 rounded-full border-2 border-green-700 text-green-700 font-semibold text-sm text-center max-w-30">${balance}</p></div>
       <Link to={`/send?to=${id}&firstName=${firstName}&lastName=${lastName}`}>
         <ButtonSmall label={"Send money"} />
       </Link>
