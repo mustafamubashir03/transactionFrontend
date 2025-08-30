@@ -22,7 +22,7 @@ export default function Send() {
         return;
       }
       await axios.post(
-        `https://transactionbackend.up.railway.app/api/v1/account/transfer?to=${to}&amount=${amount}`,
+        `https://transactionbackend-2y77.onrender.com/api/v1/account/transfer?to=${to}&amount=${amount}`,
         {},
         {
           headers: {
