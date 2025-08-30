@@ -7,7 +7,7 @@ export default function useVerify() {
   useEffect(() => {
     async function verification() {
       const response = await axios.get(
-        "https://transactionbackend.up.railway.app/api/v1/user/verify",
+        "https://transactionbackend-2y77.onrender.com/api/v1/user/verify",
         {
           headers: {
             authorization: localStorage.getItem("authorization"),
@@ -20,3 +20,4 @@ export default function useVerify() {
   }, [userVerify]);
   return { userVerify, setUserVerify };
 }
+
