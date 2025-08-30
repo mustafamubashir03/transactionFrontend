@@ -15,7 +15,7 @@ export default function PaymentSection() {
   useEffect(() => {
     async function dataFetch() {
       const response = await axios.get(
-        `https://transactionbackend.up.railway.app/api/v1/user/bulk?filter=` + debouncedValue,
+        `https://transactionbackend-2y77.onrender.com/api/v1/user/bulk?filter=` + debouncedValue,
         {
           headers: {
             authorization: localStorage.getItem("authorization"),
