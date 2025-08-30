@@ -8,7 +8,7 @@ export default function Dashboard() {
   useEffect(() => {
     async function balanceFetcher() {
       const response = await axios.get(
-        "https://transactionbackend.up.railway.app/api/v1/account/balance",
+        "https://transactionbackend-2y77.onrender.com/api/v1/account/balance",
         {
           headers: {
             authorization: localStorage.getItem("authorization"),
