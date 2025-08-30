@@ -16,7 +16,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   async function handleSubmit() {
     try {
-      await axios.post("https://transactionbackend.up.railway.app/api/v1/user/signup", {
+      await axios.post("https://transactionbackend-2y77.onrender.com/api/v1/user/signup", {
         firstName,
         lastName,
         username,
